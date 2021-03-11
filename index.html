@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>MULTIPLICATION TABLE </title>
+</head>
+<style>
+    body {
+        font-family: arial;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <br>
+    <h3 align="center"> MULTIPLICATION TABLE</h3>
+    <script language="JavaScript">
+        document.write("<center><table border='1px'>");
+        for (var a = 1; a < 6; a++) {
+            document.write("<tr style='height:40px'>");
+            for (var b = 1; b < 6; b++) {
+                document.write("<td style='width:40px'><center><font size='4'>" +
+                    a * b + "</center></font></td>");
+            }
+            document.write("</tr>");
+        }
+
+        document.write("</table></center>");
+        var color_td;
+        document.write("<table border='1px'>");
+
+        for (var i = 1; i < 6; i++) {
+
+            document.write("<tr style='height:30px;'>");
+
+            for (var j = 1; j < 6; j++) {
+
+                if (j == 1 || i == 1) {
+                    color_td = "7FFFD4";
+                } else {
+                    color_td = "#FAEBD7";
+                }
+
+                document.write("<td style='width:30px;background-color:" +
+                    color_td + "'>" + j + "</td>");
+            }
+            document.write("</tr>");
+        }
+
+        document.write("</table>");
+    </script>
+
+    </head>
+</body>
+
+</html>
